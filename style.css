@@ -1,0 +1,14 @@
+.board {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid black;
+    height: 600px;
+    width: 600px;
+}
+
+.cell {
+    border: 1px solid red;
+    font-size: 150px;
+    text-align: center;
+}
