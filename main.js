@@ -4,6 +4,7 @@ const Game = (function () {
     let gameFlow = {};
 
     //DOM Query
+    let board = document.querySelector(".board");
     let tl = document.querySelector("#tl");
     let tm = document.querySelector("#tm");
     let tr = document.querySelector("#tr");
@@ -25,9 +26,9 @@ const Game = (function () {
         let newPlayer = Player(name);
         players.push(newPlayer);
     }
-    function marker() {
-        let turn = 0;
-
-    }
-    return {players, Player, addPlayer}
+    board.addEventListener("click", (e) => {
+        if (e.target.classList.contains("cell") & e.target.textContent == "") {
+            e.target.textContent = "X";
+        }});
+    return {players, Player, addPlayer};
 })();
