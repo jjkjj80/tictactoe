@@ -12,3 +12,11 @@
     font-size: 150px;
     text-align: center;
 }
+
+.play {
+    display: inline;
+}
+
+.info {
+    display:inline;
+}
